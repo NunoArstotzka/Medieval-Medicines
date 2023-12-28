@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ResearchProjectDef>
+		<defName>EarlyMedievalMedicine</defName>
+		<label>Early Medieval Medicine</label>
+		<description>Through the use of techniques like trepanning and bloodletting, we are able to create medicine kits more effective than just herbs.</description>
+		<baseCost>2500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<tags>
+			<li>ClassicStart</li>
+		</tags>
+		<tab>MedMed</tab>
+		<researchViewX>1</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>LateMedievalMedicine</defName>
+		<label>Late Medieval Medicine</label>
+		<description>The addition of new mixtures, use of alcohol on bandages, and the idea that contagions come from unseeable particles from outside of us allow us to improve upon our medicine for much more effective treatment.</description>
+		<baseCost>4000</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>EarlyMedievalMedicine</li>
+		</prerequisites>
+		<tags>
+			<li>ClassicStart</li>
+		</tags>
+		<tab>MedMed</tab>
+		<researchViewX>2</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>ParesianMedicine</defName>
+		<label>Paresian Medicine</label>
+		<description>Our eyes have been opened to the concepts of chemsitry and sterilization. Through the use of advanced mixtures and the sterlization of wounds, bandages, and tools, we are now able to treat wounds incredibly effectively.</description>
+		<baseCost>5500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<prerequisites>
+			<li>LateMedievalMedicine</li>
+		</prerequisites>
+		<tab>MedMed</tab>
+		<researchViewX>3</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+	
+</Defs>

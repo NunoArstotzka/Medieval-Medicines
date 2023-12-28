@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=============== Medicine ====================-->
+  <ThingDef ParentName="MedicineBase">
+    <defName>MedicineEarlyMedievalMM</defName>
+    <label>early medieval medicine</label>
+    <description>A box containing various herbs, tinctures, a trepanation kit, and strips of clean cloth.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Medicine/MedicineEarlyMedieval</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MarketValue>16</MarketValue>
+      <Mass>0.35</Mass>
+      <Flammability>1.3</Flammability>
+      <MedicalPotency>0.80</MedicalPotency>
+      <MedicalQualityMax>0.90</MedicalQualityMax>
+      <DeteriorationRate>6</DeteriorationRate>
+	  <WorkToMake>700</WorkToMake>
+    </statBases>
+    <costList>
+      <MedicineHerbal>2</MedicineHerbal>
+      <Cloth>10</Cloth>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+		<li>DrugLab</li>
+      </recipeUsers>
+      <researchPrerequisite>EarlyMedievalMedicine</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>4</Crafting>
+        <Intellectual>4</Intellectual>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="MedicineBase">
+    <defName>MedicineLateMedievalMM</defName>
+    <label>late medieval medicine</label>
+    <description>A doctor's kit containing a wide variety of herbs and tinctures, a medical manuscript, alcohol-soaked bandages, and various complex tools for cutting and releasing pressure.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Medicine/MedicineLateMedieval</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MarketValue>25</MarketValue>
+      <Mass>0.50</Mass>
+      <Flammability>0.7</Flammability>
+      <MedicalPotency>0.9</MedicalPotency>
+      <MedicalQualityMax>0.9</MedicalQualityMax>
+      <DeteriorationRate>2</DeteriorationRate>
+      <WorkToMake>1000</WorkToMake>
+    </statBases>
+    <costList>
+      <MedicineEarlyMedievalMM>1</MedicineEarlyMedievalMM>
+      <Beer>1</Beer>
+      <Cloth>5</Cloth>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+		<li>DrugLab</li>
+      </recipeUsers>
+      <researchPrerequisite>LateMedievalMedicine</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+        <Intellectual>8</Intellectual>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+  
+    <ThingDef ParentName="MedicineBase">
+    <defName>MedicineParesianMM</defName>
+    <label>Paresian medicine</label>
+    <description>An incredibly advanced kit of medical supplies including sterilized bandages, mixes of chemicals and herbs, complex tools for suturing, cutting and drilling, a detailed manual of the human anatomy, and perhaps even a sprinkle of magic mixed in.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Medicine/MedicineParesian</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MarketValue>50</MarketValue>
+      <Mass>0.50</Mass>
+      <Flammability>0.7</Flammability>
+      <MedicalPotency>1.10</MedicalPotency>
+      <MedicalQualityMax>1.20</MedicalQualityMax>
+      <DeteriorationRate>2</DeteriorationRate>
+      <WorkToMake>3500</WorkToMake>
+    </statBases>
+    <costList>
+      <MedicineLateMedievalMM>1</MedicineLateMedievalMM>
+      <Neutroamine>5</Neutroamine>
+      <Cloth>8</Cloth>
+	  <Steel>5</Steel>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+		<li>DrugLab</li>
+      </recipeUsers>
+      <researchPrerequisite>ParesianMedicine</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+        <Intellectual>10</Intellectual>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>
